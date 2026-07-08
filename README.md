@@ -58,8 +58,8 @@ Students study for hours at a laptop and quietly develop eye strain, bad posture
 **Prerequisites:** Python 3.12+, a webcam, and a free [Gemini API key](https://aistudio.google.com/apikey).
 
 ```bash
-git clone https://github.com/hadimakki47/Hadi-TaskAid.git
-cd Hadi-TaskAid
+git clone https://github.com/hadimakki47/TaskAid.git
+cd TaskAid
 
 python -m venv .venv
 # Windows:
