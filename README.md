@@ -1,6 +1,6 @@
 # TaskAId 🎓
 
-**An AI-powered study assistant that watches out for you while you work — combining task management, real-time webcam wellness monitoring, and generative AI coaching.**
+**An AI-powered study assistant that watches out for you while you work, combining task management, real-time webcam wellness monitoring, and generative AI coaching.**
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-5.2+-092E20?logo=django&logoColor=white)
@@ -13,7 +13,7 @@
 
 ## The Problem
 
-Students study for hours at a laptop and quietly develop eye strain, bad posture, and dehydration — while most study apps only track what you *manually* type in.
+Students study for hours at a laptop and quietly develop eye strain, bad posture, and dehydration,  while most study apps only track what you *manually* type in.
 
 **TaskAId** turns the webcam into a passive study companion. It runs computer-vision models **entirely in the browser** to detect blinks, posture, and mood, then feeds those signals to Google Gemini for short, actionable coaching advice — all alongside a full task manager, Pomodoro timer, and study analytics.
 
