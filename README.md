@@ -6,7 +6,7 @@
 ![Django](https://img.shields.io/badge/Django-5.2+-092E20?logo=django&logoColor=white)
 ![DRF](https://img.shields.io/badge/Django%20REST%20Framework-API-A30000)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-FaceMesh%20%2B%20Pose-00A3E0)
-![Gemini](https://img.shields.io/badge/Google%20Gemini-2.0%20Flash-4285F4?logo=google&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?logo=google&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
@@ -26,7 +26,7 @@ Students study for hours at a laptop and quietly develop eye strain, bad posture
 - 👁️ **Blink detection** — Eye Aspect Ratio (EAR) computed from MediaPipe FaceMesh landmarks to catch reduced blink rates (a leading indicator of eye strain)
 - 🪑 **Posture monitoring** — ear/shoulder angle from MediaPipe Pose flags slouching in real time
 - 🙂 **Mood classification** — happy / neutral / sad inferred from mouth and eyebrow landmarks
-- 🤖 **AI coach** — aggregated signals are sent to **Gemini 2.0 Flash**, which returns structured JSON advice with a priority level and suggested actions
+- 🤖 **AI coach** — aggregated signals are sent to **Gemini 2.5 Flash**, which returns structured JSON advice with a priority level and suggested actions
 - 💧 **Hydration logging** and streak tracking
 - 📊 **Insights dashboard** — weekly study hours, daily bar charts, a day × time-slot focus heatmap, subject breakdowns, and a posture-based focus score
 - 🏆 **Leaderboard** ranked by completed tasks
@@ -44,14 +44,14 @@ Students study for hours at a laptop and quietly develop eye strain, bad posture
 ┌────────────────────── Django backend ─────────────────────────┐
 │  JSON endpoints (/api/log-blink/, /api/log-posture/, …)       │
 │  DRF REST API for all 9 models                                │
-│  /api/coach/ ──► Google Gemini 2.0 Flash ──► structured JSON  │
+│  /api/coach/ ──► Google Gemini 2.5 Flash ──► structured JSON  │
 │  SQLite + Django ORM (signals keep user counters in sync)     │
 └────────────────────────────────────────────────────────────────┘
 ```
 
 - **Backend:** Django 5 + Django REST Framework, SQLite, nine domain models (`StudyUser`, `Task`, `StudySession`, `HydrationLog`, `Reminder`, `Posture`, `Blink`, `Streak`, `Insight`)
 - **Frontend:** server-rendered Django templates + vanilla JavaScript (no build step); MediaPipe models run client-side via CDN
-- **AI:** `google-genai` SDK calling Gemini 2.0 Flash with a JSON response schema
+- **AI:** `google-genai` SDK calling Gemini 2.5 Flash with a JSON response schema
 
 ## Quick Start
 

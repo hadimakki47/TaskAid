@@ -56,7 +56,7 @@ External JS loaded from CDN: MediaPipe Pose, MediaPipe FaceMesh, Lucide icons.
 
 ### AI Coaching
 
-`POST /api/coach/` sends blink rate, posture data, and mood to Gemini 2.0 Flash and returns JSON with `advice`, `priority`, and `actions`.
+`POST /api/coach/` sends blink rate, posture data, and mood to Gemini 2.5 Flash and returns JSON with `advice`, `priority`, and `actions`.
 
 ### Key Constraints
 

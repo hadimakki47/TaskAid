@@ -515,7 +515,7 @@ Return strict JSON with keys: advice (string, 1–2 sentences), priority (1–5)
         client = get_gemini_client()
         cfg = types.GenerateContentConfig(response_mime_type="application/json")
         res = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash",
             contents=[types.Content(
                 role="user",
                 parts=[types.Part(text=prompt)]
